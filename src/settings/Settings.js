@@ -27,7 +27,7 @@ function Settings(props) {
         <Wrapper>
         <div className="main">
         <Menu className="menu"/>
-        test
+        settings
         </div>
         </Wrapper>
     )

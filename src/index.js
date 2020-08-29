@@ -9,7 +9,9 @@ function Index(props){
     <div>
        <BrowserRouter>
             <Switch>
+            <Route exact path="/" component={Dashboard} />
        <Route path="/dashboard" component={Dashboard} />
+       <Route path="/settings" component={Settings} />
        </Switch>
        </BrowserRouter>
     </div>

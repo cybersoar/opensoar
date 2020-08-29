@@ -48,30 +48,22 @@ function Menu(props){
     const white="icon white"
     const [m1,setM1]=useState(dark);
     const [m2,setM2]=useState(dark);
-    const [m3,setM3]=useState(dark);
-    const [m4,setM4]=useState(dark);
-    const [m5,setM5]=useState(dark);
-    const [m6,setM6]=useState(dark);
-    const [m7,setM7]=useState(dark);
+    
 
     const chooseMenu=(id)=>{
         
         //var id=event.currentTarget.id;
         console.log(id);
+        //alert(id)
         unselectMenu(id);
         updateIcon(id)
         props.history.push("/"+id)
     }
 
     const updateIcon=(id)=>{
-        if (id==""){setM2(white)}
-        if (id=="dashboard"){setM1(white)}
-        if (id=="map"){setM2(white)}
-        if (id=="tasks"){setM3(white)}
-        if (id=="analyze"){setM4(white)}
-        if (id=="search"){setM5(white)}
-        if (id=="servers"){setM6(white)}
-        if (id=="settings"){setM7(white)}
+        if (id===""){setM1(white)}
+        if (id==="dashboard"){setM1(white)}
+        if (id==="settings"){setM2(white)}
     }
 
     const unselectMenu=(name)=>{
@@ -81,6 +73,7 @@ function Menu(props){
     
     useEffect(()=>{
        var url=props.location.pathname;
+      
        url = url.substr(1);
        url=url.split("/")
        //alert(url[0])
@@ -91,7 +84,7 @@ function Menu(props){
                 <div className="menumain">
                 <div className="icons">
                     <AssessmentOutlined title="Dashboard" id="dashboard" value="dashboard" className={m1} onClick={(e)=>{chooseMenu(e.currentTarget.id)}}/><br/><hr className="hr"/>
-                    <Settings title="settings" id="settings" onClick={(e)=>{chooseMenu(e.currentTarget.id)}} className={m7}/><br/><hr className="hr"/>
+                    <Settings title="settings" id="settings" onClick={(e)=>{chooseMenu(e.currentTarget.id)}} className={m2}/><br/><hr className="hr"/>
                 </div>
                 </div>
             </Wrapper>
