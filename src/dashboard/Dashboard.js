@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import {Redirect,withRouter } from "react-router-dom";
-
+import Table1 from './components/Table1'
 import Menu from '../menu/Menu';
 const Wrapper = styled.ul`
 .main{
@@ -27,7 +27,7 @@ function Dashboard(props) {
         <Wrapper>
         <div className="main">
         <Menu className="menu"/>
-        test
+        <Table1 top="320" left="80"/>
         </div>
         </Wrapper>
     )
