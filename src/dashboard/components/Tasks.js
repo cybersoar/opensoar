@@ -103,7 +103,7 @@ function Tasks(props) {
                         <TableRow>
                     
                      
-                       <StyledTableCell align="left"><b>Tasks</b></StyledTableCell>
+                       <StyledTableCell align="left"><b>Recent WFs</b></StyledTableCell>
                        
                        </TableRow>
                        </TableHead>
