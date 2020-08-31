@@ -4,6 +4,10 @@ import {render} from 'react-dom'
 import { BrowserRouter,Switch, Route } from 'react-router-dom'
 import Dashboard from './dashboard/Dashboard'
 import Settings from './settings/Settings'
+
+
+window.$url=window.location.protocol+"//api-"+window.location.hostname
+window.$sid="023d2f43-2cfc-4689-8175-1157e370c05b"
 function Index(props){
   return(
     <div>

@@ -31,10 +31,10 @@ function Table1(props) {
       //setRows(JSON.parse(incidents))
 
       
-        console.log("getting incidents");
-        window.$url=window.location.protocol+"//api-"+window.location.hostname
-        var sid="023d2f43-2cfc-4689-8175-1157e370c05b"
-        const url=window.$url+"/eddie/getIncidents?sid="+sid+"&size=7&page=0&sortBy=startTimestamp&sortDirection=desc&severity=medhigh";
+        console.log("getting incidents1");
+        //window.$url=window.location.protocol+"//api-"+window.location.hostname
+        
+        const url=window.$url+"/eddie/getIncidents?sid="+window.$sid+"&size=7&page=0&sortBy=startTimestamp&sortDirection=desc&severity=medhigh";
      axios.get(url,{
        
      }).then((response)=>{

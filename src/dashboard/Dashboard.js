@@ -2,6 +2,10 @@ import React from 'react'
 import styled from 'styled-components';
 import {Redirect,withRouter } from "react-router-dom";
 import Table1 from './components/Table1'
+import Graph from './components/Graph'
+import Map from './components/Map'
+import News from './components/News'
+import Tasks from './components/Tasks'
 import Menu from '../menu/Menu';
 const Wrapper = styled.ul`
 .main{
@@ -28,6 +32,10 @@ function Dashboard(props) {
         <div className="main">
         <Menu className="menu"/>
         <Table1 top="320" left="80"/>
+        <Graph/>
+        <Map/>
+        <Tasks/>
+        <News/>
         </div>
         </Wrapper>
     )
